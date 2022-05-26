@@ -45,22 +45,22 @@ header nav ul li:hover {
   grid-gap: 0px;
   padding: 7px;
   background-image: linear-gradient(135deg, #3E7CB1, #054A91);
-  max-width: 900px;
+  max-width: 90%;
   align-self: auto;
   align-items: center;
   align-content: center;
   margin: 0 auto;
 }
 .content div {
-  background-color: green;
+  border-radius: 5px;
   margin: 5%;
 }
 .content div img {
   width: 100%;
 }
 .content div div {
-  background-color: pink;
   width: 100%;
+  margin: 0px;
 }
 .content div div p {
   text-align: center;
@@ -77,16 +77,19 @@ h1 {
 
 .text {
   grid-area: text;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 90%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  text-align: center;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  align-self: auto;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
   background-color: rgba(131, 131, 214, 0.64);
 }
 .text ul {
-  grid-column: 2/-1;
   list-style: none;
 }
 
@@ -94,6 +97,7 @@ footer {
   display: grid;
   grid-area: feet;
   background-color: aqua;
+  grid-row: 6/5;
 }
 footer a {
   text-align: center;

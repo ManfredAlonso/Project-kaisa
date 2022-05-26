@@ -6,17 +6,20 @@ h1{
 }
 .text{
     grid-area: text;
-    max-width: 900px;
-    margin: 0 auto;
-    
+    width: 90%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:30px;
-    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:5px;
+    align-self: auto;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    
     background-color: rgba(131, 131, 214, 0.64);
 
     ul{
-        grid-column: 2/-1;
         list-style: none;
         
     }

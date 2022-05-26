@@ -2,6 +2,7 @@ footer{
     display: grid;
     grid-area: feet;
     background-color: aqua;
+    grid-row:6/5 ;
     a{
         text-align: center;
     }
