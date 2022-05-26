@@ -42,20 +42,24 @@ header nav ul li:hover {
   display: grid;
   grid-area: content;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 0px;
-  padding: 7px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  padding: 7% 7% 7% 4%;
   background-image: linear-gradient(135deg, #3E7CB1, #054A91);
   max-width: 90%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   align-self: auto;
   align-items: center;
   align-content: center;
   margin: 0 auto;
 }
 .content div {
-  border-radius: 5px;
-  margin: 5%;
+  width: 100%;
+  background: green;
 }
 .content div img {
+  margin: auto;
   width: 100%;
 }
 .content div div {
@@ -63,6 +67,7 @@ header nav ul li:hover {
   margin: 0px;
 }
 .content div div p {
+  background: red;
   text-align: center;
   font-size: 20px;
 }
@@ -71,7 +76,7 @@ aside {
   background-image: linear-gradient(135deg, #3E7CB1, #054A91);
 }
 
-h1 {
+h3 {
   text-align: center;
 }
 
@@ -92,6 +97,12 @@ h1 {
 .text ul {
   list-style: none;
 }
+.text ul .feitos {
+  color: rgb(133, 114, 11);
+}
+.text ul .fraqueza {
+  color: rgb(133, 114, 11);
+}
 
 footer {
   display: grid;
@@ -111,8 +122,41 @@ footer a {
 
 .estrutura {
   display: grid;
-  grid-template-columns: 20px 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr 0fr 0fr;
   grid-template-areas: "cabeca cabeca cabeca cabeca" "content content content content" "text text text text" "feet feet feet feet";
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagem1 imagem2" "imagem3 imagem4" "imagem5 imagem6" "imagem7 imagem8";
+  }
+}
+@media (max-width: 640px) {
+  .content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagem1" "imagem2" "imagem3" "imagem4" "imagem5" "imagem6" "imagem7" "imagem8";
+  }
+
+  .cabeca ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .text {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .text ul {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
