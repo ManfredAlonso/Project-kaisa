@@ -1,0 +1,16 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.estrutura{
+    display: grid;
+    grid-template-columns: 20px 3fr 1fr 1fr;
+    grid-template-areas:
+    "cabeca cabeca cabeca cabeca"
+    "content content content content"
+    "text text text text"
+    "feet feet feet feet";
+}

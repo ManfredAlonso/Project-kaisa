@@ -1,0 +1,114 @@
+header {
+  display: grid;
+  grid-area: cabeca;
+  background: rgba(58, 58, 179, 0.741);
+  grid-template-columns: 40px 1fr;
+  grid-template-areas: "imagem imagem lista";
+}
+header img {
+  margin-left: 15px;
+  grid-area: imagem;
+  width: 40px;
+  border-radius: 50%;
+  display: inline;
+  height: 40px;
+  margin: 10px;
+}
+header nav {
+  grid-area: lista;
+  align-self: center;
+  margin-right: 40px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header nav ul li {
+  display: block;
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+header nav ul li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.content {
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  padding: 7px;
+  background-image: linear-gradient(135deg, #3E7CB1, #054A91);
+  max-width: 900px;
+  align-self: auto;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.content div {
+  background-color: green;
+  margin: 5%;
+}
+.content div img {
+  width: 100%;
+}
+.content div div {
+  background-color: pink;
+  width: 100%;
+}
+.content div div p {
+  text-align: center;
+  font-size: 20px;
+}
+
+aside {
+  background-image: linear-gradient(135deg, #3E7CB1, #054A91);
+}
+
+h1 {
+  text-align: center;
+}
+
+.text {
+  grid-area: text;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  text-align: center;
+  background-color: rgba(131, 131, 214, 0.64);
+}
+.text ul {
+  grid-column: 2/-1;
+  list-style: none;
+}
+
+footer {
+  display: grid;
+  grid-area: feet;
+  background-color: aqua;
+}
+footer a {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 20px 3fr 1fr 1fr;
+  grid-template-areas: "cabeca cabeca cabeca cabeca" "content content content content" "text text text text" "feet feet feet feet";
+}
+
+/*# sourceMappingURL=style.css.map */
